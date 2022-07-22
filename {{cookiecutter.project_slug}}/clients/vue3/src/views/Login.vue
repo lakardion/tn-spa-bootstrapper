@@ -26,7 +26,7 @@
         tag="button"
       >
         Forgot Password?
-      <router-link/>
+      </router-link>
 
       <button data-cy="submit" type="submit">Login</button>
     </form>
