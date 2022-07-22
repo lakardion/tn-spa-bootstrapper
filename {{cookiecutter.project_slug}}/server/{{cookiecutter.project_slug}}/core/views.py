@@ -117,6 +117,7 @@ def request_reset_link(request, *args, **kwargs):
 
     subject = render_to_string("registration/password_reset_subject.txt")
     logger.info(f"Password reset for user: {email}")
+    logger.info(reset_context)
     send_html_email(
         subject,
         "registration/password_reset_email.html",
