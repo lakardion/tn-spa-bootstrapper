@@ -115,7 +115,7 @@ def request_reset_link(request, *args, **kwargs):
         return Response(status=status.HTTP_204_NO_CONTENT)
     reset_context = user.reset_password_context()
 
-    subject = render_to_string("registration/forgot_password_subject.txt")
+    subject = render_to_string("registration/password_reset_subject.txt")
     logger.info(f"Password reset for user: {email}")
     send_html_email(
         subject,
