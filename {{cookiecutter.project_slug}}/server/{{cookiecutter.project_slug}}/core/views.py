@@ -24,7 +24,6 @@ from .serializers import UserLoginSerializer, UserRegistrationSerializer, UserSe
 {% else %}
 from .serializers import UserLoginSerializer, UserSerializer
 {% endif %}
-
 logger = logging.getLogger(__name__)
 
 {% if cookiecutter.use_graphql == 'y' %}
