@@ -19,4 +19,4 @@ curl -v -X POST \
        }
      }'
 
-echo "Done."
+echo "Called Github API for $repo on PR $pr"
