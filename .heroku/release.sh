@@ -8,7 +8,7 @@ token=$GITHUB_TOKEN
 app=$HEROKU_APP_NAME
 pr=$HEROKU_PR_NUMBER
 
-curl -X POST \
+curl -v -X POST \
      -H "Accept: application/vnd.github.v3+json" \
      -H "Authorization: Bearer $token" \
      https://api.github.com/repos/thinknimble/my_project/dispatches \
